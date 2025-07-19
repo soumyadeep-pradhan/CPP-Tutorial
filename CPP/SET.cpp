@@ -21,8 +21,8 @@ int main() {
     set<int> s2; // set of integers
     s2.insert(5);
     s2.insert(1);           
-    s2.insert(23);
-    s2.insert(2);   
+    s2.insert(12);
+    s2.insert(11);   
     s2.insert(4);
     s2.insert(30); // inserting integers
     s2.insert(20); // inserting integers
@@ -46,8 +46,10 @@ int main() {
     // output: 20
     // because 20 is just after 11 
     // and there is no element less than 11 in the set
-    cout << "lower bound of 31: " << *(s2.lower_bound(1)) <<endl;
-    // returns the first element not less than 50
+
+    cout << "upper bound of 10: " << *s2.upper_bound(11) << endl; // returns the first element greater than 10
+
+
 
     
 }
