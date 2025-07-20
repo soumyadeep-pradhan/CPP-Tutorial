@@ -1,1 +1,0 @@
-s2.lower_bound(31)
